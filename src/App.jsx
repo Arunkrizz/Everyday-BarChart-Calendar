@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import StatsBar from './components/StatsBar';
 import CalendarComponent from './components/CalendarComponent';
+import DataModal from './components/DataModal';
 import { CalendarDays, BarChart3 } from 'lucide-react';
 
 const CalendarDashboard = () => {
@@ -29,6 +30,8 @@ const CalendarDashboard = () => {
         {/* Calendar */}
         <CalendarComponent />
 
+        {/* Modal */}
+        <DataModal />
       </div>
 
       <style jsx>{`
