@@ -1,6 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
+import StatsBar from './components/StatsBar';
 import CalendarComponent from './components/CalendarComponent';
 import { CalendarDays, BarChart3 } from 'lucide-react';
 
@@ -21,6 +22,9 @@ const CalendarDashboard = () => {
             Interactive calendar with data visualization 
           </p>
         </div>
+
+        {/* Stats Bar */}
+        <StatsBar />
 
         {/* Calendar */}
         <CalendarComponent />
